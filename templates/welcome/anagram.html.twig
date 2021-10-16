@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello WelcomeController!{% endblock %}
+
+{% block body %}
+ 
+
+
+
+<section id="tabs" class="project-tab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav>
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="/" role="tab" aria-controls="nav-home" aria-selected="true">Palindrome</a>
+                                <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="/anagram" role="tab" aria-controls="nav-profile" aria-selected="false">Anagram</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="/pangram" role="tab" aria-controls="nav-contact" aria-selected="false">Pangram</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                  
+                            <div class="form-group">
+                                <label for="text">Enter Word to ckeck if it is Anagram</label>
+                                <input type="text" class="form-control" id="word">
+                            </div>
+                        
+                            <button  class="btn btn-default"  onclick="btnword('anagram')">Check Word</button>
+                            </div>
+                         <span id="result1" style="color:green;display:none"></span>           
+                             <span id="result2" style="color:red;display:none"></span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %}
