@@ -1,0 +1,29 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\WelcomeController::index
+    defaults:
+        template: welcome/index.html.twig
+palindrome:
+    path: /palindrome
+    controller: App\Controller\WelcomeController::index
+    defaults:
+        template: welcome/index.html.twig
+anagram:
+    path: /anagram
+    controller: App\Controller\WelcomeController::anagram
+    defaults:
+        template: welcome/anagram.html.twig
+pangram:
+    path: /pangram
+    controller: App\Controller\WelcomeController::pangram
+    defaults:
+        template: welcome/pangram.html.twig
+
+checkword:
+    path: /checkword
+    controller: App\Controller\WelcomeController::checkword
+
+
